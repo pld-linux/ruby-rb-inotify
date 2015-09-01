@@ -6,7 +6,7 @@
 Summary:	A Ruby wrapper for Linux's inotify, using FFI
 Name:		ruby-%{pkgname}
 Version:	0.9.5
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
