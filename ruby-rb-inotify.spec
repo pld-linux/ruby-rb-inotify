@@ -5,15 +5,15 @@
 %define	pkgname	rb-inotify
 Summary:	A Ruby wrapper for Linux's inotify, using FFI
 Name:		ruby-%{pkgname}
-Version:	0.9.5
-Release:	2
+Version:	0.11.1
+Release:	1
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	865ed70ff9f90d5d23dc4ab906358650
-URL:		http://github.com/nex3/rb-inotify
+# Source0-md5:	366aded73b8d521b65ffe40489cea47f
+URL:		https://github.com/guard/rb-inotify
 BuildRequires:	rpm-rubyprov
-BuildRequires:	rpmbuild(macros) >= 1.656
+BuildRequires:	rpmbuild(macros) >= 1.665
 %if %{with tests}
 BuildRequires:	ruby-yard >= 0.4.0
 %endif
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.md MIT-LICENSE VERSION
+%doc LICENSE.md README.md
 %{ruby_vendorlibdir}/rb-inotify.rb
 %{ruby_vendorlibdir}/rb-inotify
 %{ruby_specdir}/%{pkgname}-%{version}.gemspec
